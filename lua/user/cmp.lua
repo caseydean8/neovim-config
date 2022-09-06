@@ -42,9 +42,11 @@ local kind_icons = {
 	Operator = "",
 	TypeParameter = "",
 }
+-- find more at nerdfonts.com/cheat-sheet
 
 cmp.setup({
 	snippet = {
+    -- snippet engine must be specified
 		expand = function(args)
 			luasnip.lsp_expand(args.body) -- For `luasnip` users.
 		end,
@@ -123,6 +125,8 @@ cmp.setup({
 		documentation = cmp.config.window.bordered(),
 	},
 	experimental = {
-		ghost_text = true,
+    -- this is the annoying italics autocomplete, wonder if there is  a toggle
+		ghost_text = false,
 	},
 })
+
