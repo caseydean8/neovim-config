@@ -21,6 +21,7 @@ if not lspconfig_status_ok then
   return
 end
 
+-- for more info on opts go to 10:45 https://www.youtube.com/watch?v=6F3ONwrCxMg&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ&index=11
 local opts = {}
 
 for _, server in pairs(servers) do

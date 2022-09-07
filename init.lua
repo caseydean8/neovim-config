@@ -1,4 +1,4 @@
-require "user.options"
+require "user.options" -- goes to options.lua
 require "user.keymaps"
 require "user.plugins"
 require "user.autocommands"
@@ -18,5 +18,5 @@ require "user.impatient"
 require "user.illuminate"
 require "user.indentline"
 require "user.alpha"
-require "user.lsp"
+require "user.lsp" -- goes to init.lua in lsp directory
 require "user.dap"
